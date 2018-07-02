@@ -1,0 +1,14 @@
+version: '3'
+services:
+  greetingservice:
+    build: greetingservice
+    ports:
+      - "8080:8080"
+  configservice:
+    build: configservice
+    ports:
+      - "8888:8888"
+  registryservice:
+    build: registryservice
+    ports:
+      - "8761:8761"
